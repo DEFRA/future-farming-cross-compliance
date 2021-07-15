@@ -2,11 +2,12 @@
   <x:Members>
     <x:Property Name="OUT_boolSearchExists" Type="OutArgument(x:Boolean)" />
     <x:Property Name="IN_browserXCOM" Type="InArgument(ui:Browser)" />
+    <x:Property Name="IN_intTimeout" Type="InArgument(x:Int32)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,647</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1522,831</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>OpenSearchBox_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -89,10 +90,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b2564c5e-dc2d-4c69-a41b-c3a28b9766c4" InformativeScreenshot="c97028a66250148999c42ea0547b9b3e" Selector="&lt;webctrl aaname='Log/Update Assessment Details' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b2564c5e-dc2d-4c69-a41b-c3a28b9766c4" InformativeScreenshot="c97028a66250148999c42ea0547b9b3e" Selector="&lt;webctrl aaname='Log/Update Assessment Details' /&gt;" TimeoutMS="[IN_intTimeout]">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>

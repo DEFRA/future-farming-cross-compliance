@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1054,704</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>639,829</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Open_Siti_Agri_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -34,7 +34,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="21">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="42">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -56,6 +56,7 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Open_Siti_Agri" sap:VirtualizedContainerService.HintSize="649,639" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -167,7 +168,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">300,221.5 300,251.5 295.641666666667,251.5 295.641666666667,271.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <so:Check_Logged_In DisplayName="Check Logged In" sap:VirtualizedContainerService.HintSize="200,22" IN_browserSitiAgri="[OUT_browserSitiAgri]" IN_intTimeout="[IN_dictConfig(&quot;timeoutS&quot;)]" sap2010:WorkflowViewState.IdRef="Check_Logged_In_1" OUT_boolMenuExists="[boolLoggedIn]">
+                  <so:Check_Logged_In DisplayName="Check Logged In" sap:VirtualizedContainerService.HintSize="200,22" IN_browserSitiAgri="[OUT_browserSitiAgri]" IN_intTimeout="[IN_dictConfig(&quot;timeoutMS&quot;)]" sap2010:WorkflowViewState.IdRef="Check_Logged_In_1" OUT_boolMenuExists="[boolLoggedIn]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
